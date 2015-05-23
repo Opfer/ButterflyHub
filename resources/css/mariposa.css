@@ -526,7 +526,7 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sub
 	background-color: #FFF;
 	color: #444444;
 	padding-top: 35px;
-	padding-bottom: 100px;
+	padding-bottom: 110px;
 }
 
 .main .home-links .icon {
@@ -635,7 +635,7 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sub
 
 /* ======= About ======= */
 .about{
-	padding-top: 0px;
+	padding-top: 15px;
 	padding-bottom: 120px;
 	color: #444444;
 	background-color: #50C094;
@@ -703,7 +703,7 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sub
 
 /* ======= Contact ======= */
 .contact{
-	padding-top: 0px;
+	padding-top: 15px;
 	padding-bottom: 120px;
 	background-color: #FFF;
 	/*background-color: #fefefe;
@@ -865,7 +865,7 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sub
 
 /* ======= Sign up ======= */
 .signup{
-	padding-top: 0px;
+	padding-top: 15px;
 	padding-bottom: 20px;
 	background-color: #50C094;
 }

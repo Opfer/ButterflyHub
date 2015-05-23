@@ -863,6 +863,30 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sub
 	padding: 0;
 }
 
+.contact .flexslider {
+	border: 4px solid #DFD2D2;
+}
+
+.contact  .gallery {
+	margin-top: 35px;
+	margin-bottom: 0px;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+.contact  .gallery .flexslider .slides img {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contact  .gallery-links {
+	color: #fff;
+}
+
+.contact .gallery-links:hover {
+	color: #FAAE42;
+}
+
 /* ======= Sign up ======= */
 .signup{
 	padding-top: 15px;
@@ -1004,6 +1028,26 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sub
     -webkit-transition: all 0.2s;
     -o-transition: all 0.2s;
     -ms-transition: all 0.2s;
+}
+
+.signup  .gallery {
+	margin-top: 35px;
+	margin-bottom: 0px;
+	padding-left: 30%;
+	padding-right: 30%;
+}
+
+.signup  .gallery .flexslider .slides img {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.signup  .gallery-links {
+	color: #fff;
+}
+
+.signup .gallery-links:hover {
+	color: #FAAE42;
 }
 
 /* ======= Footer ======= */

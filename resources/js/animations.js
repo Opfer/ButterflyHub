@@ -60,11 +60,14 @@ jQuery(document).ready(function($) {
             if (isInView) {$(this).addClass('animated fadeInUp delayp4');}
         });
 		$('#contact .support-side').css('opacity', 0).one('inview', function(isInView) {
-            if (isInView) {$(this).addClass('animated fadeInLeft  delayp3');}
+            if (isInView) {$(this).addClass('animated fadeInLeft delayp3');}
         });		
 		$('#contact .contact-side').css('opacity', 0).one('inview', function(isInView) {
-            if (isInView) {$(this).addClass('animated fadeInRight  delayp4');}
-        });		
+            if (isInView) {$(this).addClass('animated fadeInRight delayp4');}
+        });	
+		$('#contact .gallery').css('opacity', 0).one('inview', function(isInView) {
+            if (isInView) {$(this).addClass('animated fadeInUp delayp4');}
+        });			
 		
 		/* Animate elements in #signup */
 		$('#signup .title').css('opacity', 0).one('inview', function(isInView) {

@@ -36,7 +36,20 @@ jQuery(document).ready(function($) {
 		if ($('.navbar-collapse').hasClass('in')){
 			$('.navbar-collapse').removeClass('in').addClass('collapse');
 		}
-	});	
+	});
+	
+	
+	//access from url
+	if(window.location.hash != ""){
+		//store hash
+        var target = window.location.hash;
+		$('body').scrollTo(target, 800, {offset: -63, 'axis':'y', easing:'easeOutQuad'});
+        //Collapse mobile menu after clicking
+		if ($('.navbar-collapse').hasClass('in')){
+			$('.navbar-collapse').removeClass('in').addClass('collapse');
+		}
+		window.location.hash="";
+	}
 	
 	/* ======= jQuery Responsive equal heights plugin ======= */    
     $('.home-links .equal-height').matchHeight(); 

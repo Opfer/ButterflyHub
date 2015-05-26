@@ -73,45 +73,60 @@
 					<div class="filters">
 						<div class="taxa">
 							<select class="form-control">
-								<option value="">[Family/Subfamilie]</option>
+								<option value="" disabled selected>[Family/Subfamilie]</option>
+								<option value="" >[Family/Subfamilie]</option>
+								<option value="" >[Family/Subfamilie]</option>
 							</select>
 							<select class="form-control">
-								<option value="">[Tribe]</option>
+								<option value="" disabled selected>[Tribe]</option>
 							</select>
 							<select class="form-control">
-								<option value="">[Genus]</option>
+								<option value="" disabled selected>[Genus]</option>
 							</select>
 							<select class="form-control">
-								<option value="">[Species]</option>
+								<option value="" disabled selected>[Species]</option>
 							</select>
 							<select class="form-control">
-								<option value="">[Subspecies]</option>
+								<option value="" disabled selected>[Subspecies]</option>
 							</select>
+							<input class="form-control" placeholder="English"/>
 						</div>
 						<div class="location">
 							<select class="form-control">
-								<option value="">[Country]</option>
+								<option value="" disabled selected>[Country]</option>
 							</select>
 							<select class="form-control">
-								<option value="">[State]</option>
+								<option value="" disabled selected>[State]</option>
 							</select>
 							<select class="form-control">
-								<option value="">[Site]</option>
+								<option value="" disabled selected>[Site]</option>
 							</select>
+						</div>
+						<div class="elevation">
 							<h4>Elevation</h4>
-							<input placeholder="Max" class="form-control"/>
-							<input placeholder="Min" class="form-control"/>
+							<div class="row">
+								<div class="col-md-60 input-group">
+									<input placeholder="Max" class="form-control number-validation"/>
+									<div class="input-group-addon">m.</div>
+								</div>								
+							</div>
+							<div class="row">
+								<div class="col-md-60 input-group">
+									<input placeholder="Min" class="form-control number-validation"/>
+									<div class="input-group-addon">m.</div>
+								</div>	
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-22 col-sm-25 col-xs-60">
 					<div class="thumbnails">
-						asd
+						testing size
 					</div>
 				</div>
 				<div class="col-md-28 col-sm-25 col-xs-60">
 					<div class="detail">
-						asd
+						testing size
 					</div>
 				</div>
 			</div>
@@ -138,7 +153,9 @@
 	<script	src="resources/js/jquery.flexslider-min.js"></script>
 	<script	src="resources/js/jquery.scrollTo.min.js"></script>
 	<script	src="resources/js/jquery.matchHeight-min.js"></script>
+	<script src="resources/js/jquery.numeric.min.js"></script>
 	<script src="resources/js/main.js"></script>
+	<script src="resources/js/gallery.js"></script>
 	<!--[if !IE]>--> 
 	<script src="resources/js/animations.js"></script>
     <!--<![endif]--> 

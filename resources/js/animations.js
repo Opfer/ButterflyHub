@@ -79,5 +79,19 @@ jQuery(document).ready(function($) {
 		$('#signup .login-box').css('opacity', 0).one('inview', function(isInView) {
             if (isInView) {$(this).addClass('animated fadeInRight delayp2');}
         });
+		
+		/* Animate elements in #gallery */
+		$('#gallery h1').css('opacity', 0).one('inview', function(isInView) {
+            if (isInView) {$(this).addClass('animated fadeInDown delayp1');}
+        });
+		$('#gallery .filters').css('opacity', 0).one('inview', function(isInView) {
+            if (isInView) {$(this).addClass('animated fadeInLeft delayp1');}
+        });
+		$('#gallery .thumbnails').css('opacity', 0).one('inview', function(isInView) {
+            if (isInView) {$(this).addClass('animated fadeInUp delayp1');}
+        });
+		$('#gallery .detail').css('opacity', 0).one('inview', function(isInView) {
+            if (isInView) {$(this).addClass('animated fadeInRight delayp1');}
+        });
     }
 });

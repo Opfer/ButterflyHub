@@ -1124,5 +1124,52 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sub
 
 /* ======= Dynamic Pages ======= */
 /* ======= Gallery ======= */
-#gallery  .filters  select{
+#gallery h1{
+	margin-bottom: 25px;
+}
+
+#gallery  select{
 	margin-bottom: 5px;
+}
+
+#gallery .filters{
+	margin-bottom: 20px;
+}
+
+#gallery  .filters  .taxa{
+	padding-bottom: 18px;
+}
+
+#gallery  .filters  .location{
+	padding-bottom: 8px;
+}
+
+#gallery  .filters  .elevation .row{
+	padding-bottom: 5px;
+}
+
+#gallery .filters .elevation .input-group{
+	padding-left: 6%;
+	padding-right: 6%;
+}
+
+#gallery .thumbnails{
+	background-color: #FFF;
+	min-height: 4500px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+
+#gallery .detail{
+	background-color: #FFF;
+	min-height: 450px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 10px;
+	margin-bottom: 20px;
+}

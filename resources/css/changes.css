@@ -56,3 +56,11 @@ a:hover {
 	-moz-box-shadow: 0px 8px 26px -2px rgba(0,0,0,0.68);
 	box-shadow: 0px 8px 26px -2px rgba(0,0,0,0.68);
 }
+
+#gallery  .filters  .taxa{
+	padding-bottom: 50px;
+}
+
+#gallery  .filters  .location{
+	padding-bottom: 0px;
+}

@@ -168,6 +168,10 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sub
 	padding-top: 80px;
 }
 
+.offset-header2 {
+	padding-top: 95px;
+}
+
 .delayp1 {
 	animation-delay: .1s; 
 	-moz-animation-delay: .1s; 
@@ -1163,7 +1167,6 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sub
 	margin-bottom: 20px;
 }
 
-
 #gallery .detail{
 	background-color: #FFF;
 	min-height: 450px;
@@ -1173,3 +1176,33 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sub
 	padding: 10px;
 	margin-bottom: 20px;
 }
+
+/* ======= Photographer ======= */
+#photographer .photographer-header-left{
+	padding-bottom: 15px;
+}
+
+#photographer .photographer-header-left  header .profile-header .profile-picture{
+	width: 120px;
+	padding-right: 15px;
+}
+#photographer .photographer-header-left  header .profile-header .profile-info .profile-info-detail{
+	display: block;
+	font-size: 14px;
+}
+
+#photographer .photographer-header-left  header .profile-header .profile-info h1{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 32px;
+}
+
+#photographer .photographer-header-left  header .profile-header .profile-info .username, 
+#photographer .photographer-header-left  header .profile-header .profile-info small{
+	margin-top: 0px;
+	margin-bottom: 5px;
+	font-size: 16px;
+	color: #E5E5E5;
+}
+
+

@@ -17,7 +17,7 @@ h1{
 }
 
 a {
-	color: #56bc94;
+	color: #153266;
 	-webkit-transition: all 0.4s ease-in-out;
 	-moz-transition: all 0.4s ease-in-out;
 	-ms-transition: all 0.4s ease-in-out;
@@ -26,7 +26,7 @@ a {
 
 a:hover {
 	text-decoration: none;
-	color: #3fa07a;
+	color: #1e6c98;
 }
 
 a:focus {
@@ -164,12 +164,16 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sub
 	text-transform: uppercase;
 }
 
-.offset-header {
-	padding-top: 80px;
+.offset-header1 {
+	padding-top: 65px;
 }
 
 .offset-header2 {
-	padding-top: 95px;
+	padding-top: 80px;
+}
+
+.offset-header3 {
+	padding-top: 94px;
 }
 
 .delayp1 {
@@ -668,8 +672,12 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sub
 	-moz-background-clip: padding;
 	-webkit-background-clip: padding-box;
 	background-clip: padding-box;
-	border-bottom: 4px solid #ec971f;
+	border-bottom: 4px solid #fff;
+	-webkit-box-shadow: 0px 8px 26px -2px rgba(0,0,0,0.68);
+	-moz-box-shadow: 0px 8px 26px -2px rgba(0,0,0,0.68);
+	box-shadow: 0px 8px 26px -2px rgba(0,0,0,0.68);
 }
+
 .about .item .question {
 	margin-top: 0;
 	font-size: 20px;
@@ -677,7 +685,7 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sub
 }
 .about .item .question .fa {
 	margin-right: 10px;
-	color: #DD9126;
+	color: #EB9822;
 }
 
 .about .faq-links {
@@ -1205,4 +1213,87 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sub
 	color: #E5E5E5;
 }
 
+/* ======= Taxon ======= */
+#taxon a:hover{
+	color: #1e6c98;
+}
 
+#taxon .taxa{
+	display: block;
+}
+
+#taxon header .taxa span, #taxon .taxa span a{
+	color: white;
+}
+
+#taxon .taxa span a{
+	text-decoration: underline;
+}
+
+#taxon .taxa span a:hover{
+	color: rgb(242, 242, 242);
+}
+
+#taxon header .taxa span:after {
+	content: " : ";
+}
+
+#taxon header .taxa span:last-child:after{
+	content: "";
+}
+
+#taxon header .english-name{
+	font-size: 24px;
+	font-weight: 600;
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+
+#taxon header .forum-link{
+	font-size: 18px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+#taxon header .forum-link a{
+	color: #4B4B4B;
+}
+
+#taxon header .forum-link a:hover{
+	color: #306B82;
+}	
+
+#taxon .taxon-description{
+	color: white;
+	padding-bottom: 10px;
+}
+
+#taxon .title{
+	font-size: 18px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+
+#taxon article{
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 2px;
+	margin-bottom: 15px;
+	background: #FCFCFC;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	-webkit-box-shadow: 0px 8px 22px -2px rgba(0,0,0,0.48);
+	-moz-box-shadow: 0px 8px 22px -2px rgba(0,0,0,0.48);
+	box-shadow: 0px 8px 22px -2px rgba(0,0,0,0.48);
+}
+
+#taxon article a, #taxon article .fa{
+	color: #EB9822;
+}

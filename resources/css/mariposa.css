@@ -659,8 +659,9 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sub
 	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
 }
 .about .item {
-	cursor: pointer;
-	padding: 30px;
+	padding-top: 0px;
+	padding-right: 30px;
+	padding-left: 30px;
 	padding-bottom: 20px;
 	background: #FCFCFC;
 	margin-bottom: 20px;
@@ -679,9 +680,11 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sub
 }
 
 .about .item .question {
+	padding-top: 30px;
 	margin-top: 0;
 	font-size: 20px;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
+	cursor: pointer;
 }
 .about .item .question .fa {
 	margin-right: 10px;

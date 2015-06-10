@@ -16,6 +16,9 @@
 	<link href="resources/css/flexslider.css" rel="stylesheet"/>
 	<link href="resources/css/animate.min.css" rel="stylesheet"/>
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic' rel='stylesheet'/>
+	<link href="resources/css/slick.css" rel="stylesheet"/>
+	<link href="resources/css/slick-theme.css" rel="stylesheet"/>	
+	<link href="resources/css/star-rating.min.css" rel="stylesheet"/>
 	<link href="resources/css/mariposa.css" rel="stylesheet"/>
 	<link href="resources/css/changes.css" rel="stylesheet"/>
 	<script src="resources/js/modernizr.custom.2.8.3.min.js"></script>
@@ -65,10 +68,10 @@
 	</header><!--//header-->
 	
 	<main>
-		<div id="taxon" class="container offset-header1">
-			<h1>Taxon</h1>
+		<div id="taxon" class="container offset-header3">
+			<h1 style="display: none">Taxon</h1>
 			<div class="row">
-				<div class="col-md-35 col-sm-30 col-xs-60">
+				<div class="options-panel col-md-38 col-sm-30 col-xs-60">
 					<header>	
 						<div class="taxa">
 							<span class="family"><a href="">Hesperiidae</a></span>
@@ -79,103 +82,201 @@
 							<span class="subspecies"><i><a href=""></a></i></span>
 						</div>
 						<h2 class="english-name">
-							Army-ant Ghost-Skipper
+							Army-ant Ghost-Skipper Testing long name
 						</h2>
-						<h3 class="forum-link">
-							<a href=""><i>Phanus ecitonorum</i> <i class="fa fa-comments"></i></a>
-						</h3>
-					</header>
-					
+					</header>				
 					<div class="row">
-						<div class="taxon-description col-md-25 col-sm-60 col-xs-60">
+						<div class="taxon-description col-md-20 col-sm-60 col-xs-60">
+							<div>
+								<h3 class="forum-link">
+									<a href=""><i>Phanus ecitonorum</i> <i class="fa fa-comments"></i></a>
+								</h3>
+							</div>
 							<p>
 								A common <i>Phanus</i> very similar to <i>P. vitreus</i>,
 								not particularly associated with army ants, despite English name!
 							</p>
 						</div>
-						<div class="col-md-15 col-sm-30 col-xs-60">
+						<div class="col-md-17 col-sm-30 col-xs-30">
 							<div class="taxon-links">
-								test
+								<div class="row">
+									<div class="icon-container col-xs-30">
+										<div class="icon">
+											<a href="#" class="link-icon compare-icon" data-toggle="tooltip" data-placement="bottom" title="Compare">Compare</a>
+										</div>
+									</div>
+									<div class="icon-container col-xs-30">
+										<div class="icon">
+											<a href="#" class="link-icon gallery-icon" data-toggle="tooltip" data-placement="bottom" title="Gallery">Gallery</a>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="icon-container col-xs-30">
+										<div class="icon">
+											<a href="#" class="link-icon calendar-icon" class="link-icon gallery-icon" data-toggle="tooltip" data-placement="bottom" title="Calendar">Calendar</a>
+										</div>
+									</div>
+									<div class="icon-container col-xs-30">
+										<div class="icon">
+											<a href="#" class="link-icon map-icon"  class="link-icon gallery-icon" data-toggle="tooltip" data-placement="bottom" title="Map">Map</a>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="col-md-20 col-sm-30 col-xs-60">
+						<div class="col-md-23 col-sm-30 col-xs-30">
 							<div class="taxon-images">
-								test
+								<div class="row">
+									<div class="col-xs-15">	
+										<span class="category">Dorsal<br/>(6)</span>
+									</div>
+									<div class="col-xs-45">
+										<div class="slideshow dorsal-images">
+											<div class="image"><img style="opacity:0" src="resources/img/taxon/1.jpg"></img></div>
+											<div class="image"><img style="opacity:0" src="resources/img/taxon/2.jpg"></img></div>
+											<div class="image"><img style="opacity:0" src="resources/img/taxon/3.jpg"></img></div>
+											<div class="image"><img style="opacity:0" src="resources/img/taxon/4.jpg"></img></div>
+											<div class="image"><img style="opacity:0" src="resources/img/taxon/5.jpg"></img></div>
+											<div class="image"><img style="opacity:0" src="resources/img/taxon/6.jpg"></img></div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-15">
+										<span class="category">Ventral<br/>(6)</span>
+									</div>
+									<div class="col-xs-45">
+										<div class="slideshow ventral-images">
+											<div class="image"><img style="opacity:0" src="resources/img/taxon/1.jpg"></img></div>
+											<div class="image"><img style="opacity:0" src="resources/img/taxon/2.jpg"></img></div>
+											<div class="image"><img style="opacity:0" src="resources/img/taxon/3.jpg"></img></div>
+											<div class="image"><img style="opacity:0" src="resources/img/taxon/4.jpg"></img></div>
+											<div class="image"><img style="opacity:0" src="resources/img/taxon/5.jpg"></img></div>
+											<div class="image"><img style="opacity:0" src="resources/img/taxon/6.jpg"></img></div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-15">
+										<span class="category">Immature<br/>(6)</span>
+									</div>
+									<div class="col-xs-45">
+										<div class="slideshow immature-images">
+											<div class="image"><img style="opacity:0" src="resources/img/taxon/1.jpg"></img></div>
+											<div class="image"><img style="opacity:0" src="resources/img/taxon/2.jpg"></img></div>
+											<div class="image"><img style="opacity:0" src="resources/img/taxon/3.jpg"></img></div>
+											<div class="image"><img style="opacity:0" src="resources/img/taxon/4.jpg"></img></div>
+											<div class="image"><img style="opacity:0" src="resources/img/taxon/5.jpg"></img></div>
+											<div class="image"><img style="opacity:0" src="resources/img/taxon/6.jpg"></img></div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div id="identification" class="col-xs-60">
-							<article>
-								<h2 class="title" data-toggle="collapse" data-target="#identification-detail"><i class="fa fa-caret-up"></i> Identification</h2>
-								<p id="identification-detail" class="detail collapse in">
-									<i>Phanus ecitonorum</i> is very similar to <i>P. vitreus</i>, and is only distinguished by the lack of a small 
-									hyaline spot in space 2 on the HW. Other ghost-skippers differ in having and extremely irregular row of 
-									marginal spots on the HW(as in <i>P. grandis</i>) or having the long hyaline spot in the HW cell divided 
-									by a dark line. <br/>[<a href="#">Compare Page</a>]
-								</p>
-							</article>
-						</div>
-					</div><!--//row identification-->
-					<div class="row">
-						<div id="foodplant" class="col-xs-60">
-							<article>
-								<h2 class="title" data-toggle="collapse" data-target="#foodplant-detail"><i class="fa fa-caret-down"></i></i> Foodplant & Inmatures</h2>
-								<p id="foodplant-detail" class="detail collapse">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-									labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-									laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-									voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-									non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-								</p>
-							</article>
-						</div>
-					</div><!--//row foodplant & inmatures-->
-					<div class="row">
-						<div id="distribution" class="col-xs-60">
-							<article>
-								<h2 class="title" data-toggle="collapse" data-target="#distribution-detail"><i class="fa fa-caret-down"></i></i> Distribution</h2>
-								<p id="distribution-detail" class="detail collapse">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-									labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-									laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-									voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-									non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-								</p>
-							</article>
-						</div>
-					</div><!--//row distribution-->
-					<div class="row">
-						<div id="habits" class="col-xs-60">
-							<article>
-								<h2 class="title" data-toggle="collapse" data-target="#habits-detail"><i class="fa fa-caret-down"></i></i> Habits and Habitats</h2>
-								<p id="habits-detail" class="detail collapse">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-									labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-									laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-									voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-									non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-								</p>
-							</article>
-						</div>
-					</div><!--//row habits and habitats-->
-					<div class="row">
-						<div id="references" class="col-xs-60">
-							<article>
-								<h2 class="title" data-toggle="collapse" data-target="#references-detail"><i class="fa fa-caret-down"></i></i> References</h2>
-								<p id="references-detail" class="detail collapse">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-									labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-									laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-									voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-									non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-								</p>
-							</article>
-						</div>
-					</div><!--//row references-->
+					<div class="info">
+						<div class="row">
+							<div id="identification" class="col-xs-60">
+								<article>
+									<h2 class="title" data-toggle="collapse" data-target="#identification-detail"><i class="fa fa-caret-up"></i> Identification</h2>
+									<p id="identification-detail" class="detail collapse">
+										<i>Phanus ecitonorum</i> is very similar to <i>P. vitreus</i>, and is only distinguished by the lack of a small 
+										hyaline spot in space 2 on the HW. Other ghost-skippers differ in having and extremely irregular row of 
+										marginal spots on the HW(as in <i>P. grandis</i>) or having the long hyaline spot in the HW cell divided 
+										by a dark line. <br/>[<a href="#">Compare Page</a>]
+									</p>
+								</article>
+							</div>
+						</div><!--//row identification-->
+						<div class="row">
+							<div id="foodplant" class="col-xs-60">
+								<article>
+									<h2 class="title" data-toggle="collapse" data-target="#foodplant-detail"><i class="fa fa-caret-down"></i></i> Foodplant & Inmatures</h2>
+									<p id="foodplant-detail" class="detail collapse">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+										labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+										laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+										voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+										non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+									</p>
+								</article>
+							</div>
+						</div><!--//row foodplant & immatures-->
+						<div class="row">
+							<div id="distribution" class="col-xs-60">
+								<article>
+									<h2 class="title" data-toggle="collapse" data-target="#distribution-detail"><i class="fa fa-caret-down"></i></i> Distribution</h2>
+									<p id="distribution-detail" class="detail collapse">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+										labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+										laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+										voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+										non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+									</p>
+								</article>
+							</div>
+						</div><!--//row distribution-->
+						<div class="row">
+							<div id="habits" class="col-xs-60">
+								<article>
+									<h2 class="title" data-toggle="collapse" data-target="#habits-detail"><i class="fa fa-caret-down"></i></i> Habits and Habitats</h2>
+									<p id="habits-detail" class="detail collapse">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+										labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+										laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+										voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+										non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+									</p>
+								</article>
+							</div>
+						</div><!--//row habits and habitats-->
+						<div class="row">
+							<div id="references" class="col-xs-60">
+								<article>
+									<h2 class="title" data-toggle="collapse" data-target="#references-detail"><i class="fa fa-caret-down"></i></i> References</h2>
+									<p id="references-detail" class="detail collapse">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+										labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+										laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+										voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+										non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+									</p>
+								</article>
+							</div>
+						</div><!--//row references-->
+					</div>
 				</div>
-				<div class="col-md-25 col-sm-30 col-xs-60">
-					Gallery
+				<div class="detail-panel col-md-22 col-sm-30 col-xs-60">
+					<div class="detail">
+						<img class="img-responsive" src="resources/img/taxon/3.jpg"></img>
+						<div class="rating-container">
+							<input id="rating">
+						</div>
+					</div>
+					<div class="detail-description row">
+						<div class="col-xs-60">
+							<div class="row">
+								<div class="col-md-30">
+									<p><i>Phanus ecitonorum</i></p>
+									<p><strong>Peru</strong> (Madre de Dios)</p>
+									<p>Pantiacolla Lodge</p>
+									<p>450 m.</p>
+								</div>
+								<div class="col-md-30 text-right">
+									<p>by <a href="#"><i>David Geale</i></a></p>
+								</div>
+							</div>							
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-35 text-left">
+							<span><a href="#"><i class="fa fa-caret-square-o-up"></i> Set as default image for taxon</a></span>
+						</div>
+						<div class="col-xs-25 text-right">
+							<span>Attracted with shrimp bait along forest track.</span>
+						</div>
+					</div>
 				</div>
 			</div><!--//row-->
 		</div><!--//taxon-->
@@ -207,5 +308,37 @@
 	<!--[if !IE]>--> 
 	<script src="resources/js/animations.js"></script>
     <!--<![endif]--> 
+	
+	<script src="resources/js/slick.js"/></script>
+	<script src="resources/js/star-rating.min.js"/></script>
+	
+	<script>
+		$(document).ready(function(){
+			//tooltip initialization
+			$('[data-toggle="tooltip"]').tooltip();
+			
+			//slideshow initialization
+			$('.slideshow').slick({
+				dots: false,
+				touchMove: true,
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				focusOnSelect: true
+			});
+			
+			$('.slideshow .image img').css('opacity', '1');
+			
+			//rating stars
+			$("#rating").rating({
+				showCaption:false, 
+				showClear: false,
+				min: 0,
+				max: 5,
+				step: 1,
+				size:'xs' 
+			});			
+			
+		});		
+	</script>
 </body>
 </html>

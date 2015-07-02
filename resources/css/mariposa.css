@@ -9,7 +9,7 @@ body {
 	font-size: 16px;
 	background-color: #50C094;
 	-webkit-font-smoothing: antialiased;
-	margin-bottom: 60px;
+	margin-bottom: 50px;
 }
 
 h1{
@@ -138,6 +138,26 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sub
 	appearance: none;
 	/* for mobile safari */
 	-webkit-appearance: none;
+}
+
+.tooltip.top, .tooltip.bottom{
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	opacity: 1s;
+}
+
+.tooltip.bottom .tooltip-arrow {
+	border-bottom-color: #444444;	
+}
+
+.tooltip-inner {
+	background-color: #444444;
+}
+
+.slick-slide img {
+	border: 3px solid #FFF;
+	display: block;
+	width: 100%;
 }
 
 ::-webkit-input-placeholder {
@@ -297,6 +317,16 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sub
 	-o-transition-delay: 2s;
 }
 
+.rating-xs{
+	font-size: 1.5em;
+}
+
+.rating-container {
+	position: absolute;
+	color: #e3e3e3;
+	overflow: visible;
+}
+
 .overlay-gradient {
 	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjN2JiMjhhIiBzdG9wLW9wYWNpdHk9IjAuOTUiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Y4Zjg5YyIgc3RvcC1vcGFjaXR5PSIwLjk1Ii8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
@@ -366,7 +396,7 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sub
 .header {
 	padding: 10px 0;
 	background: #fff;
-	z-index: 9999;
+	z-index: 1050;
 	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
 	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
 	box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
@@ -1074,12 +1104,12 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sub
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	height: 60px;
+	height: 50px;
 	background-color: #3D3D3D;
 }
 
 .footer  .container .text-muted {
-	margin: 20px 0;
+	margin: 15px 0px 0;
 	font-size: 14px;
 	color: #C3C3C3;
 }
@@ -1249,32 +1279,131 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sub
 	font-size: 24px;
 	font-weight: 600;
 	margin-top: 5px;
-	margin-bottom: 0px;
+	margin-bottom: 2px;
 }
 
-#taxon header .forum-link{
+#taxon .forum-link{
 	font-size: 18px;
 	margin-top: 5px;
 	margin-bottom: 15px;
 }
 
-#taxon header .forum-link a{
+#taxon .forum-link a{
 	color: #4B4B4B;
 }
 
-#taxon header .forum-link a:hover{
+#taxon .forum-link a:hover{
 	color: #306B82;
 }	
 
 #taxon .taxon-description{
 	color: white;
-	padding-bottom: 10px;
+	padding-bottom: 15px;
 }
 
 #taxon .title{
 	font-size: 18px;
 	margin-top: 0px;
-	margin-bottom: 5px;
+	margin-bottom: 8px;
+	cursor: pointer;
+}
+
+#taxon .taxon-links{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#taxon .taxon-links .row:first-child{
+	padding-bottom: 10px;
+}
+
+#taxon .taxon-links .icon-container{
+
+}
+
+#taxon .taxon-links .icon-container .icon a{
+	display: inline-block;
+	font-size: 0px;
+	cursor: pointer;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	color: #fff;
+
+	background: rgba(255,255,255,0.13);
+	-webkit-transition: background 0.2s, color 0.2s;
+	-moz-transition: background 0.2s, color 0.2s;
+	transition: background 0.2s, color 0.2s;
+}
+
+#taxon .taxon-links .icon-container .icon a:after{
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	content: '';
+	-webkit-box-sizing: content-box; 
+	-moz-box-sizing: content-box; 
+	box-sizing: content-box;
+	
+	top: -7px;
+	left: -7px;
+	padding: 7px;
+	box-shadow: 0 0 0 3px #fff;
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+	-webkit-transform: scale(.8);
+	-moz-transition: -moz-transform 0.2s, opacity 0.2s;
+	-moz-transform: scale(.8);
+	-ms-transform: scale(.8);
+	transition: transform 0.2s, opacity 0.2s;
+	transform: scale(.8);
+	opacity: 0;
+}
+
+#taxon .taxon-links .icon-container .icon a:before{
+	font-family: FontAwesome;
+	speak: none;
+	font-size: 40px;
+	line-height: 70px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	display: block;
+	-webkit-font-smoothing: antialiased;
+}
+
+#taxon .taxon-links .icon-container .icon .compare-icon:before{
+	content: "\f0c5";
+}
+
+#taxon .taxon-links .icon-container .icon .gallery-icon:before{
+	content: "\f03e";
+}
+
+#taxon .taxon-links .icon-container .icon .calendar-icon:before{
+	content: "\f073";
+}
+
+#taxon .taxon-links .icon-container .icon .map-icon:before{
+	content: "\f0ac";
+}
+
+#taxon .taxon-links .icon-container .icon .link-icon:hover {
+	background: rgba(255,255,255,1);
+	color: #47C2C6;
+}
+
+#taxon .taxon-links .icon-container .icon .link-icon:hover:after {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
 }
 
 #taxon article{
@@ -1299,4 +1428,67 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sub
 
 #taxon article a, #taxon article .fa{
 	color: #EB9822;
+}
+
+#taxon .slideshow .image {
+	padding: 3px;
+}
+
+#taxon .slick-slider {
+	margin-bottom: 10px;
+}
+
+#taxon .slick-prev
+{
+    left: -17px;
+}
+#taxon  [dir='rtl'] .slick-prev
+{
+    right: -17px;
+}
+
+#taxon .slick-next
+{
+    right: -17px;
+}
+#taxon [dir='rtl'] .slick-next
+{
+    left: -17px;
+}
+
+#taxon .slick-prev:before, .slick-next:before {
+	font-size: 16px;
+}
+
+#taxon .taxon-images{
+	padding-top: 10px;
+	padding-bottom: 15px;
+	padding-right: 8px;
+}
+
+#taxon .taxon-images .category{
+	font-size: 13px;
+	color: #FFF;
+}
+
+#taxon .detail-panel .detail{
+	padding-bottom: 8px;
+}
+
+#taxon .detail-panel .detail-description{
+	color: white;
+	padding-bottom: 10px;
+}
+
+#taxon .detail-panel .detail-description a{
+	
+}
+
+#taxon .detail-panel .detail-description p{
+	margin-bottom: 0px;
+}
+
+#taxon .rating-container {
+	bottom: 77px;
+	left: 10px;
 }

@@ -94,7 +94,7 @@ jQuery(document).ready(function($) {
             if (isInView) {$(this).addClass('animated fadeInRight delayp1');}
         });
 		
-		/* Animate elements in #taxon Taxon page */
+		/* Animate elements in #Taxon page */
 		//Identification
 		$('#identification-detail').on('shown.bs.collapse', function () {
 		   $("#identification article .fa").removeClass("animated fadeInUp fadeInDown fa-caret-down").addClass("animated fadeInUp fa-caret-up");
@@ -131,5 +131,15 @@ jQuery(document).ready(function($) {
 		$('#references-detail').on('hidden.bs.collapse', function () {
 		   $("#references article .fa").removeClass("animated fadeInUp fadeInDown fa-caret-up").addClass("animated fadeInDown fa-caret-down");
 		});
+		
+		$('#taxon .options-panel').css('opacity', 0).one('inview', function(isInView) {
+            if (isInView) {$(this).addClass('animated fadeInLeft delayp1');}
+        });
+		$('#taxon .detail-panel').css('opacity', 0).one('inview', function(isInView) {
+            if (isInView) {$(this).addClass('animated fadeInRight delayp1');}
+        });
+		$('#taxon .info').css('opacity', 0).one('inview', function(isInView) {
+            if (isInView) {$(this).addClass('animated fadeInUp delayp1');}
+        });
     }
 });

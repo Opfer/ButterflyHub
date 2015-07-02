@@ -19,6 +19,7 @@
 	<link href="resources/css/slick.css" rel="stylesheet"/>
 	<link href="resources/css/slick-theme.css" rel="stylesheet"/>	
 	<link href="resources/css/star-rating.min.css" rel="stylesheet"/>
+	<link href="resources/css/jquery.fancybox.css" rel="stylesheet"/>
 	<link href="resources/css/mariposa.css" rel="stylesheet"/>
 	<link href="resources/css/changes.css" rel="stylesheet"/>
 	<script src="resources/js/modernizr.custom.2.8.3.min.js"></script>
@@ -249,7 +250,9 @@
 				</div>
 				<div class="detail-panel col-md-22 col-sm-30 col-xs-60">
 					<div class="detail">
-						<img class="img-responsive" src="resources/img/taxon/3.jpg"></img>
+						<a id="single_1" href="resources/img/taxon/3.jpg" title="<i>Phanus ecitonorum</i> / <strong>Peru</strong> (Madre de Dios) / Pantiacolla Lodge">
+							<img class="img-responsive" src="resources/img/taxon/3.jpg" alt="" />
+						</a>
 						<div class="rating-container">
 							<input id="rating">
 						</div>
@@ -309,9 +312,9 @@
 	<script src="resources/js/animations.js"></script>
     <!--<![endif]--> 
 	
-	<script src="resources/js/slick.js"/></script>
-	<script src="resources/js/star-rating.min.js"/></script>
-	
+	<script src="resources/js/slick.js"></script>
+	<script src="resources/js/star-rating.min.js"></script>
+	<script src="resources/js/jquery.fancybox.pack.js"></script>
 	<script>
 		$(document).ready(function(){
 			//tooltip initialization
@@ -338,6 +341,14 @@
 				size:'xs' 
 			});			
 			
+			$("#single_1").fancybox({
+				helpers: {
+					title : {
+					  type : 'float'
+					}
+				}
+			});
+
 		});		
 	</script>
 </body>

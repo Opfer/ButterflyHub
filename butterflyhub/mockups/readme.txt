@@ -1,0 +1,1 @@
+User profile image: http://pixabay.com/en/profile-man-user-home-human-42914/
